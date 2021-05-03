@@ -1,9 +1,12 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import HomePage from './../HomePage/homePage';
 
 function TitlePane() {
     return (
         <div class="columns has-text-centered">
             <div class="column is-2">
-                <button class="button is-dark">
+                <button class="button is-dark" id="home" onClick={homeButtonPress}>
                     <span class="icon-text">
                         <span class="icon">
                             <i class="fas fa-home"></i>
@@ -39,6 +42,15 @@ function TitlePane() {
             </div>
         </div>
     );
+}
+
+function homeButtonPress(event) {
+    ReactDOM.render(
+        <React.StrictMode>
+          <HomePage/> 
+        </React.StrictMode>,
+        document.getElementById('root')
+      );
 }
 
 export default TitlePane;
