@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/trivia-game/static/css/main.161f628d.chunk.css",
+    "main.js": "/trivia-game/static/js/main.0b734645.chunk.js",
+    "main.js.map": "/trivia-game/static/js/main.0b734645.chunk.js.map",
+    "runtime-main.js": "/trivia-game/static/js/runtime-main.29127e1e.js",
+    "runtime-main.js.map": "/trivia-game/static/js/runtime-main.29127e1e.js.map",
+    "static/css/2.0d309abc.chunk.css": "/trivia-game/static/css/2.0d309abc.chunk.css",
+    "static/js/2.e73a971d.chunk.js": "/trivia-game/static/js/2.e73a971d.chunk.js",
+    "static/js/2.e73a971d.chunk.js.map": "/trivia-game/static/js/2.e73a971d.chunk.js.map",
+    "index.html": "/trivia-game/index.html",
+    "static/css/2.0d309abc.chunk.css.map": "/trivia-game/static/css/2.0d309abc.chunk.css.map",
+    "static/css/main.161f628d.chunk.css.map": "/trivia-game/static/css/main.161f628d.chunk.css.map",
+    "static/js/2.e73a971d.chunk.js.LICENSE.txt": "/trivia-game/static/js/2.e73a971d.chunk.js.LICENSE.txt",
+    "static/media/areyouready.be3621b2.jpeg": "/trivia-game/static/media/areyouready.be3621b2.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29127e1e.js",
+    "static/css/2.0d309abc.chunk.css",
+    "static/js/2.e73a971d.chunk.js",
+    "static/css/main.161f628d.chunk.css",
+    "static/js/main.0b734645.chunk.js"
+  ]
+}
