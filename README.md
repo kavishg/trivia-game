@@ -2,6 +2,9 @@
 
 Test your knowledge on subjects ranging from mathematics to film and animals with this game!
 
+## Link to website
+https://kavishg.github.io/trivia-game/
+
 ## Author
 Kavish Gandhi
 
