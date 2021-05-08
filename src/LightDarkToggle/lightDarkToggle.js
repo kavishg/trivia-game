@@ -8,7 +8,7 @@ function LightDarkToggle(props) {
 
     return (
         <div>
-            <span class="tag is-dark" id="dark-light-mode">Light/Dark Mode</span>
+            <span class="tag is-black" id="dark-light-mode">Light/Dark Mode</span>
             <label class="switch"  >
                 <input type="checkbox" id="toggle-switch" onChange={props.onChange}/>
                 <span class="slider round"></span>

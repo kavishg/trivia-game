@@ -4,7 +4,7 @@ import "bulma/css/bulma.css";
 import "./modal.css";
 import {useState, useEffect} from 'react';
 
-function Modal(props) {
+const Modal = React.memo(function(props) {
 
     const [isActive, setActive] = useState(false);
     const [randomFact, setRandomFact] = useState('');
@@ -66,7 +66,7 @@ function Modal(props) {
             </header>
             <section className="modal-card-body">
                 <div>
-                    <h4 class="title is-4">{ (props.type ==='fact') ? 
+                    <h4 class="title is-4">{ (props.type ==='fact' || props.type === 'mathFact') ? 
                         `${randomFact}` :  
                         <div>
                             <div>{joke.setup}</div>
@@ -88,7 +88,7 @@ function Modal(props) {
         </button>
         </div>
     );
-}
+})
 
 export default Modal;
 
