@@ -19,28 +19,33 @@ function SubmitModal(props) {
     function handleSubmitButtonPress(event) {
         setActive(true);
         let radioButtons = [];
+        let tempScore = 0;
         let answersEntered = {};
         radioButtons = document.getElementsByClassName('radioButton');
         for (let i = 0; i < radioButtons.length; i++) {
           if (radioButtons[i].checked) {
             let objIndex = radioButtons[i].getAttribute("objindex");
             answersEntered[''+objIndex] = radioButtons[i].getAttribute('option');
+            if (answersEntered[''+objIndex] === props.answers[''+objIndex]) {
+                tempScore += 1;
+            }
           }
         }
         let keys1 = Object.keys(answersEntered);
         let keys2 = Object.keys(props.answers);
+        
         let incorrectAnswers = {};
-        if(keys1.length === keys2.length) {
-          for(let i = 0; i < keys1.length; i++) {
+
+        for(let i = 0; i < keys2.length; i++) {
             if (props.answers[""+i] !== answersEntered[""+i]) {
-              incorrectAnswers[""+i] = answersEntered[""+i];
+                incorrectAnswers[""+i] = answersEntered[""+i];
             }
-          }
         }
+
         if (Object.keys(answersEntered).length === 0) {
             setScore(0);
         } else  {
-            setScore(Object.keys(props.answers).length - Object.keys(incorrectAnswers).length);
+            setScore(tempScore);
         }
         let incorrectKeys = Object.keys(incorrectAnswers);
         setPrintKeys(incorrectKeys.map(key => parseInt(key)+1));
