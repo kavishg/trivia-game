@@ -10,7 +10,6 @@ import { lightTheme, darkTheme } from './../theme';
 import { useDarkMode } from './../useDarkMode';
 import { GlobalStyles } from './../global';
 import LightDarkToggle from './../LightDarkToggle/lightDarkToggle';
-import { render } from '@testing-library/react';
 
 let answers = {};
 let questionObjectsTemp = [];
