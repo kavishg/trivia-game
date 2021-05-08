@@ -1,0 +1,21 @@
+.break_line {
+    height: auto !important;
+    white-space: unset !important;
+    width: 100%
+  }
+
+  .right {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .right-below-mode {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+ }
+ .right-below-fact{
+  position: absolute;
+  right: 20px;
+  top: 250px;
+}

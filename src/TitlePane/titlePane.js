@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HomePage from './../HomePage/homePage';
-import GkQuestionBox from './../GkQuestionBox/gkQuestionBox';
-import AnimalQuestionBox from './../AnimalQuestionBox/animalQuestionBox';
-import MathQuestionBox from './../MathQuestionBox/mathQuestionBox';
-import FilmQuestionBox from './../FilmQuestionBox/filmQuestionBox';
-import GeographyQuestionBox from './../GeographyQuestionBox/geographyQuestionBox';
+import GkPage from '../GkPage/gkPage';
+import AnimalPage from '../AnimalPage/animalPage';
+import MathPage from '../MathPage/mathPage';
+import FilmPage from '../FilmPage/filmPage';
+import GeographyPage from '../GeographyPage/geographyPage';
 
 function TitlePane() {
     return (
@@ -23,7 +23,7 @@ function TitlePane() {
             <div class="box columns ">
                 <div class="column">
                     <span class="icon-text">
-                        <span>Categories</span>
+                        <h3 class="title is-4">Categories</h3>
                         <span class="icon">
                             <i class="fas fa-arrow-right"></i>
                         </span>
@@ -57,8 +57,7 @@ function TitlePane() {
                             </button>
                         </div>
                     </div>
-                </div>
-                            
+                </div>              
             </div>
         </div>
     );
@@ -79,10 +78,7 @@ function handleButtonPress(event) {
     if(buttonType === "gk") {
         ReactDOM.render(
             <React.StrictMode>
-                <br></br>
-                <TitlePane />
-                <br></br>
-                <GkQuestionBox />
+                <GkPage />
                 <br></br>
             </React.StrictMode>,
             document.getElementById('root')
@@ -90,10 +86,7 @@ function handleButtonPress(event) {
     } else if (buttonType === "animals") {
         ReactDOM.render(
             <React.StrictMode>
-                <br></br>
-                <TitlePane />
-                <br></br>
-                <AnimalQuestionBox />
+                <AnimalPage />
                 <br></br>
             </React.StrictMode>,
             document.getElementById('root')
@@ -101,10 +94,7 @@ function handleButtonPress(event) {
     } else if (buttonType === "mathematics") {
         ReactDOM.render(
             <React.StrictMode>
-                <br></br>
-                <TitlePane />
-                <br></br>
-                <MathQuestionBox />
+                <MathPage />
                 <br></br>
             </React.StrictMode>,
             document.getElementById('root')
@@ -112,10 +102,7 @@ function handleButtonPress(event) {
     } else if (buttonType === "film") {
         ReactDOM.render(
             <React.StrictMode>
-                <br></br>
-                <TitlePane />
-                <br></br>
-                <FilmQuestionBox />
+                <FilmPage />
                 <br></br>
             </React.StrictMode>,
             document.getElementById('root')
@@ -123,10 +110,7 @@ function handleButtonPress(event) {
     } else if (buttonType === "geography") {
         ReactDOM.render(
             <React.StrictMode>
-                <br></br>
-                <TitlePane />
-                <br></br>
-                <GeographyQuestionBox />
+                <GeographyPage />
                 <br></br>
             </React.StrictMode>,
             document.getElementById('root')
