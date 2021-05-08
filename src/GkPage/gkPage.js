@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios/dist/axios';
 import { useEffect, useState } from 'react';
 import './gkPage.css';
@@ -11,8 +10,10 @@ import { lightTheme, darkTheme } from './../theme';
 import { useDarkMode } from './../useDarkMode';
 import { GlobalStyles } from './../global';
 import LightDarkToggle from './../LightDarkToggle/lightDarkToggle';
+import { render } from '@testing-library/react';
 
 let answers = {};
+let questionObjectsTemp = [];
 
 function GkQuestionBox() {
   const [questionObjects, setQuestionObjects] = useState([]);
@@ -26,7 +27,6 @@ function GkQuestionBox() {
         method: 'get',
       });
 
-      let questionObjectsTemp = [];
       for (let i = 0; i<result.data.results.length; i++) {
         questionObjectsTemp.push(result.data.results[i]);
         answers[""+i] = result.data.results[i].correct_answer;
@@ -35,7 +35,7 @@ function GkQuestionBox() {
     }
     fetchData();
   }, []);
-  
+
   return (
     <ThemeProvider theme={themeMode}>
     <GlobalStyles />
@@ -99,6 +99,6 @@ function shuffle(array) {
     array[i] = array[j];
     array[j] = temp;
   }
-}
+};
 
 export default GkQuestionBox;

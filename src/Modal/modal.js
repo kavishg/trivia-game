@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import axios from 'axios/dist/axios';
 import "bulma/css/bulma.css";
 import "./modal.css";

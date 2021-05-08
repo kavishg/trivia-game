@@ -30,7 +30,10 @@ function HomePage() {
                                 <h1 class="title is-1">Welcome to Trivia!</h1>
                                 <h3 class="subtitle is-4">
                                     Choose a category and answer the questions in it. 
-                                    If you finish answering all the questions in all the categories you win the game!
+                                    If you finish answering 10 questions in any category, you win the game! 
+                                    Try and get a perfect score in all the categories! If you get tired of trivia, 
+                                    and feel like learning something new, check out the random fun fact generator, or if you're 
+                                    in the mood for a silly joke check out the joke generator for some good laughs.
                                 </h3>
                                 <figure class="image is-3by2">
                                     <img src={readyImage} alt="homepage"/>
