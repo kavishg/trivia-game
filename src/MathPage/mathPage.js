@@ -13,7 +13,7 @@ import LightDarkToggle from './../LightDarkToggle/lightDarkToggle';
 
 let answers = {};
 
-const MathQuestionBox = React.memo(function () {
+function MathQuestionBox() {
   const [questionObjects, setQuestionObjects] = useState([]);
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -82,7 +82,7 @@ const MathQuestionBox = React.memo(function () {
     </div>
     </ThemeProvider>
   );
-})
+}
 
 function decodeHtml(html) {
   let txt = document.createElement("textarea");
