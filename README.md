@@ -1,4 +1,4 @@
-# Welcome to Trivia Game!
+# Welcome to the Trivia Game!
 
 Test your knowledge on subjects ranging from mathematics to film and animals with this game!
 
